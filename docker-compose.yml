@@ -22,8 +22,8 @@ services:
     ports:
       - "15672:15672"
     environment:
-      - RABBITMQ DEFAULT USER=guest
-      - RABBITMQ DEFAULT USER=guest
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_USER=guest
 
   vproapp:
     build:
