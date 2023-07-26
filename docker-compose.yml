@@ -25,7 +25,7 @@ services:
       - RABBITMQ DEFAULT USER=guest
       - RABBITMQ DEFAULT USER=guest
 
- vproapp:
+  vproapp:
     build:
       context: ./Docker-files/app
     image: ykvi1126/vprofileapp
@@ -35,7 +35,7 @@ services:
     volumes:
       - vproappdata:/usr/local/tomcat/webapps
 
- vproweb:
+  vproweb:
     build:
       context: ./Docker-files/web
     image: ykvi1126/vprofileweb
